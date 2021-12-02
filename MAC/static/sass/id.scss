@@ -1,0 +1,31 @@
+@import "variables";
+
+#body1{
+	background: $color1;
+  font-family: $fonte1;
+
+img {
+	width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Italianno');
+}
+
+#body4{
+  font-family: $fonte1;
+  background-image: url(./imag/logo_do_site.jpeg);
+  background-size: cover;
+}
+
+#h1_3 {
+	font-size: 100px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	text-align: center;
+	color:#143c97;
+	text-transform: capitalize;
+}
+
+ #tab4 table nav{
+	padding: 0px;
+}

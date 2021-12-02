@@ -1,0 +1,165 @@
+@import "variables";
+
+.fonte_1{
+	font-family: $fonte1;
+}
+
+.fonte_2{
+	font-family: $fonte2;
+}
+
+.image {
+	width: 300px;
+	height: 200px;
+	float: left;
+	clear: left;
+	margin: 10px; 
+}
+
+.local-caixa-de-pesquisa{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.container2{
+  position: relative;
+  padding: 50px 120px;
+}
+
+.tamanho-caixa-de-pesquisa{
+  width: 1000px;
+  border: 2px solid $color5;
+  background: transparent;
+  padding: 18px 36px;
+  border-radius: 0px;
+  outline: none;
+  font-size: 25px;
+  color: #color5;
+}
+
+.botao-pesquisa{
+  position: absolute;
+  top: 100px;
+  right: 550px;
+  cursor: pointer;
+  color: $color5;
+  background: $color3;
+  border: 0px;
+  width: 150px;
+  height: 65px;
+  border-radius: 0px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+
+.cancelbtn {
+  	width: auto;
+  	padding: 10px 18px;
+  	background-color: $color4;
+}
+
+.container {
+  	padding: 16px;
+}
+
+
+/* O Modal (plano de fundo) */
+.modal {
+  	display: none;
+ 	position: fixed;
+  	z-index: 1;
+  	left: 0;
+  	top: 0;
+  	width: 100%;
+  	height: 100%;
+  	overflow: auto;
+  	background-color: $color9;
+  	padding-top: 60px;
+}
+
+/* Conteúdo / caixa modal */
+.modal-content {
+  	background-color: #fefefe;
+  	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  	border: 1px solid $color8;
+  	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* O botão Fechar (x) */
+.close {
+  	position: absolute;
+  	right: 25px;
+  	top: 0;
+  	color: $color9;
+  	font-size: 35px;
+  	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  	color: red;
+  	cursor: pointer;
+}
+
+/* Adicionar animação de zoom */
+.animate {
+  	-webkit-animation: animatezoom 0.6s;
+  	animation: animatezoom 0.6s
+}
+
+.topnav {
+  background-color: $color1;
+  overflow: hidden;
+  border-bottom: solid;
+  border-bottom-color: $color5;
+  font-family: $fonte1
+}
+
+.topnav a {
+  float: left;
+  color: $color5;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav a:hover {
+  background-color: $color5;
+  color: $color1;
+  
+}
+
+
+.topnav a:active {
+  background-color: $color6;
+  color: $color5;
+}
+
+.container5 { 
+  height: 300px;
+  width: 300px;
+  position: relative;
+  border: 3px solid $color2; 
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.cancelbtn {
+  	width: auto;
+  	padding: 10px 18px;
+  	background-color: $color4;
+}

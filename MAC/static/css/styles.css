@@ -1,0 +1,377 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Italianno");
+@import url("https://fonts.googleapis.com/css?family=Italianno");
+@import url("https://fonts.googleapis.com/css?family=Italianno");
+@import url("https://fonts.googleapis.com/css?family=Italianno");
+#body1 {
+  background: #c5654c;
+  font-family: Italianno;
+  @import url("https://fonts.googleapis.com/css?family=Italianno");
+}
+#body1 img {
+  width: 100%;
+}
+
+#body4 {
+  font-family: Italianno;
+  background-image: url(./imag/logo_do_site.jpeg);
+  background-size: cover;
+}
+
+#h1_3 {
+  font-size: 100px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  color: #143c97;
+  text-transform: capitalize;
+}
+
+#tab4 table nav {
+  padding: 0px;
+}
+
+.fonte_1 {
+  font-family: Italianno;
+}
+
+.fonte_2 {
+  font-family: Nunito;
+}
+
+.image {
+  width: 300px;
+  height: 200px;
+  float: left;
+  clear: left;
+  margin: 10px;
+}
+
+.local-caixa-de-pesquisa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container2 {
+  position: relative;
+  padding: 50px 120px;
+}
+
+.tamanho-caixa-de-pesquisa {
+  width: 1000px;
+  border: 2px solid #ffffff;
+  background: transparent;
+  padding: 18px 36px;
+  border-radius: 0px;
+  outline: none;
+  font-size: 25px;
+  color: #color5;
+}
+
+.botao-pesquisa {
+  position: absolute;
+  top: 100px;
+  right: 550px;
+  cursor: pointer;
+  color: #ffffff;
+  background: #143c97;
+  border: 0px;
+  width: 150px;
+  height: 65px;
+  border-radius: 0px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.container {
+  padding: 16px;
+}
+
+/* O Modal (plano de fundo) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000;
+  padding-top: 60px;
+}
+
+/* Conteúdo / caixa modal */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* O botão Fechar (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Adicionar animação de zoom */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+.topnav {
+  background-color: #c5654c;
+  overflow: hidden;
+  border-bottom: solid;
+  border-bottom-color: #ffffff;
+  font-family: Italianno;
+}
+
+.topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ffffff;
+  color: #c5654c;
+}
+
+.topnav a:active {
+  background-color: #94594a;
+  color: #ffffff;
+}
+
+.container5 {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  border: 3px solid #162a83;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Italianno;
+  background-size: cover;
+  background-image: url(./imag/logo_do_site.jpeg);
+}
+
+h1 {
+  color: #162a83;
+}
+
+h1 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+h5 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  color: #143c97;
+}
+
+h6 {
+  font-size: 30px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: left;
+  color: #143c97;
+}
+
+button {
+  font-family: fonte1;
+  font-size: 30px;
+}
+
+nav a:link {
+  color: blue;
+  font-size: 30px;
+  font-style: italic;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #800080;
+}
+
+nav a:active {
+  text-decoration: underline purple;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+table, th, tr {
+  border: none;
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+}
+
+table nav {
+  padding: 90px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #888888;
+  font-family: Italianno;
+  text-transform: uppercase;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #888888;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #888888;
+}
+
+img.avatar {
+  width: 30%;
+  border-radius: 0%;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* Alterar os estilos do botão span e cancelar em telas extra pequenas */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}
+ul, p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 1px;
+  margin-top: 2px;
+  text-align: left;
+}
+
+img {
+  width: 100%;
+}
+
+/* Campos de entrada de largura total */
+input[type=text] {
+  width: 40%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Estilo para todos os botões */
+button {
+  background-color: #162a83;
+  color: white;
+  padding: 7px 10px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+/* Estilo para o botões de Cancelar */
+/* Alterar os estilos do botão span e cancelar em telas extra pequenas */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

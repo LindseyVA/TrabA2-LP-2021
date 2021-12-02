@@ -1,0 +1,21 @@
+{% extends 'MAC/template.html' %}
+{% load static %}
+
+{% block  header %}
+    <meta charset="UTF-8">
+	<link rel="shortcut icon" href="{% static 'img/icon.jpeg' %}"/>
+	<title>Me Ajuda, Chef</title>
+{% endblock %}
+
+{% block styles %}
+    <link rel='stylesheet' href="{% static 'css/styles.css' %}">
+{% endblock %}
+
+{% block image %}
+	<img src="{% static 'img/logo_do_site.jpeg' %}" alt="Logo do Site 'Me Ajuda, Chef'">
+{% endblock %}
+
+{% block content %}
+    <h1 id='h1_3'>Parece que a página que você está tentando encontrar não existe :(</h1>
+	<h6>	Tente bucar por http://127.0.0.1:8000/home</h6>
+{% endblock %}
