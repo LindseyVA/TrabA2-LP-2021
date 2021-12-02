@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	
+		<link rel="stylesheet" href="css/styles.css">
+		<title>MAC - Bem Vindo</title>
+
+	</head>
+	<body id="body1">
+
+		<div class="img"><img src="img/logo_do_site.jpeg" alt="Logo do Site 'Me Ajuda, Chef'"></div>
+		<div class="topnav">
+		  <a href="home.html">Home</a>
+		  <a href="search.html">Pesquisar</a>
+		  <a href="receitas.htm">Receitas</a>
+		  <a href="produtos.html">Produtos</a>
+		  <a href="minhas-receitas.html">Minhas Receitas</a>
+		</div> 
+		<h1 id="h1_3">Bem Vindo, Chef</h1>
+
+		<center><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+		<div id="id01" class="modal">
+  
+			<form class="modal-content animate" action="/action_page.php" method="post">
+				<div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+					<img src="img/avatar.jpeg" alt="Avatar" class="avatar">
+				</div>
+
+				<div class="container">
+				<label for="uname"><b><h5>Usuario:</h5></b></label>
+				<input type="text" placeholder="Enter Username" name="uname" required>
+
+				<label for="psw"><b><h5>Senha:</h5></b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+        
+				<button type="submit">Login</button>
+				<label>
+					<input type="checkbox" checked="checked" name="remember"><h5> Lembre-se de mim</h5>
+				</label>
+				</div>
+
+				<div class="container" style="background-color:#f1f1f1">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+					<span class="psw"><h6>Esqueceu a </h6><a href="#"><h6>senha?</h6></a></span>
+				</div>
+			</form>
+		</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('id01');
+
+			// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+			
+		</script>
+
+	</body>
+</html>
+
+<!-- Olá Tio Rafa, eu usei a maior parte do código desse site: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_login_form_modal -->
