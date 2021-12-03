@@ -1,20 +1,27 @@
-<!DOCTYPE html>
-<html lang= "pt-br">
-	<head>
+{% extends 'MAC/template.html' %}
+{% load static %}
+
+{% block  header %}
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="css/styles.css">
-		<link rel="shortcut icon" href="img/icon.jpeg"/>
+		<link rel="shortcut icon" href="{% static 'img/icon.jpeg' %}"/>
 		<title>MAC - Receita Pão Delicioso</title>
-	</head>
-	<img src="img/logo_do_site.jpeg" alt="Logo do Site 'Me Ajuda, Chef'">
-	
-	<body>
+{% endblock %}
+
+{% block styles %}
+    <link rel='stylesheet' href="{% static 'css/styles.css' %}">
+{% endblock %}
+
+{% block image %}
+	<img src="{% static 'img/logo_do_site.jpeg' %}" alt="Logo do Site 'Me Ajuda, Chef'">
+{% endblock %}
+
+{% block content %}
 		<div class="topnav">
-		  <a href="home.html">Home</a>
-		  <a href="search.html">Pesquisar</a>
-		  <a href="receitas.htm">Receitas</a>
-		  <a href="produtos.html">Produtos</a>
-		  <a href="minhas-receitas.html">Minhas Receitas</a>
+			<a href="{% url 'home' %}">Home</a>
+			<a href="{% url 'search' %}">Pesquisar</a>
+			<a href="{% url 'receitas' %}">Receitas</a>
+			<a href="{% url 'produtos' %}">Produtos</a>
+			<a href="{% url 'minhas-receitas' %}">Minhas Receitas</a>
 		</div> 
 		<header>
 			<h1>Receitas de Pão para um Café da Manhã Delicioso</h1>
@@ -24,7 +31,7 @@
 			
 			<div class="row">
 			  <div class="col-*-*">
-				<img class="image" src="img/pao.jpeg" class="float-start" alt="Pão para um Café da Manhã Delicioso">
+				<img class="image" src="{% static 'img/pao.jpeg' %}" class="float-start" alt="Pão para um Café da Manhã Delicioso">
 			  </div>
 			  <div class="col-*-*">
 				<h2>Ingredientes:</h2>
@@ -58,5 +65,4 @@
 			<h2>Tempo de Preparo:</h2>
 				<p class="fonte_2">2 horas</p>
 		</header>
-	</body>
-</html>
+{% endblock %}

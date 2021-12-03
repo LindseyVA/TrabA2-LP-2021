@@ -1,19 +1,27 @@
-<!DOCTYPE html>
-<html lang= "pt-br">
-	<head>
+{% extends 'MAC/template.html' %}
+{% load static %}
+
+{% block  header %}
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="img/icon.jpeg"/>
+    	<link rel="shortcut icon" href="{% static 'img/icon.jpeg' %}"/>
 		<title>MCA - Loja</title>
-	</head>
-	
-	<img id="body1" src="img/logo_do_site.jpeg" alt="Logo do Site 'Me Ajuda, Chef'">
+{% endblock %}
+
+{% block styles %}
+    <link rel='stylesheet' href="{% static 'css/styles.css' %}">
+{% endblock %}
+
+{% block image %}
+	<img src="{% static 'img/logo_do_site.jpeg' %}" alt="Logo do Site 'Me Ajuda, Chef'">
+{% endblock %}
+
+{% block content %}
 	<div class="topnav">
-	  <a href="home.html">Home</a>
-	  <a href="search.html">Pesquisar</a>
-	  <a href="receitas.htm">Receitas</a>
-	  <a href="produtos.html">Produtos</a>
-	  <a href="minhas-receitas.html">Minhas Receitas</a>
+		<a href="{% url 'home' %}">Home</a>
+		<a href="{% url 'search' %}">Pesquisar</a>
+		<a href="{% url 'receitas' %}">Receitas</a>
+		<a href="{% url 'produtos' %}">Produtos</a>
+		<a href="{% url 'minhas-receitas' %}">Minhas Receitas</a>
 	</div> 
 	
 	<div>
@@ -26,7 +34,6 @@
 		</div>
 	</div>
 	
-	<body>
 		<header class="fonte_1">
 			<h1>Produtos:</h1>
 		</header>
@@ -34,7 +41,7 @@
 		<table>
 			<tr>
 				<td>
-					<img class="image" src="img/cacarola_antiaderente.jpeg" alt="Caçarola Antiaderente Lyon 30cm com Tampa Dourada - Tramontina Utilidades">
+					<img class="image" src="{% static 'img/cacarola_antiaderente.jpeg' %}" alt="Caçarola Antiaderente Lyon 30cm com Tampa Dourada - Tramontina Utilidades">
 					<nav>
 						<a href= "https://bit.ly/3CNuV9s" target= "_blank" class="fonte_2">Caçarola Antiaderente Lyon 30cm com Tampa Dourada - Tramontina Utilidades</a>
 					</nav>
@@ -43,7 +50,7 @@
 		
 			<tr>
 				<td>
-					<img class="image" src="img/assadeira_aluminio_retangula.jpeg" alt="Assadeira de Alumínio Retangular - 42x30x5cm">
+					<img class="image" src="{% static 'img/assadeira_aluminio_retangula.jpeg' %}" alt="Assadeira de Alumínio Retangular - 42x30x5cm">
 					<nav>
 						<a href= "https://bit.ly/3o71kDP" target= "_blank" class="fonte_2">Assadeira de Alumínio Retangular - 42x30x5cm</a>
 					</nav>
@@ -52,7 +59,7 @@
 		
 			<tr>
 				<td>
-					<img class="image" src="img/saleiro.jpeg" alt="Saleiro de Madeira Essence">
+					<img class="image" src="{% static 'img/saleiro.jpeg' %}" alt="Saleiro de Madeira Essence">
 					<nav>
 						<a href= "https://bit.ly/3o5YW0j" target= "_blank" class="fonte_2">Saleiro de Madeira Essence</a>
 					</nav>
@@ -61,7 +68,7 @@
 		
 			<tr>
 				<td>
-					<img class="image" src="img/9_pecas.jpeg" alt="Kit de Utensílios de Cozinha Inox - 9 peças">
+					<img class="image" src="{% static 'img/9_pecas.jpeg' %}" alt="Kit de Utensílios de Cozinha Inox - 9 peças">
 					<nav>
 						<a href= "https://bit.ly/3ia5ffz" target= "_blank" class="fonte_2">Conjunto de Utensílios de Cozinha Inox 9 Peças</a>
 					</nav>
@@ -70,12 +77,11 @@
 		
 			<tr>
 				<td>
-					<img class="image" src="img/11_pecas.jpeg" alt="Conjunto de Utensílios para Cozinha 11 Peças + Suporte">
+					<img class="image" src="{% static 'img/11_pecas.jpeg' %}" alt="Conjunto de Utensílios para Cozinha 11 Peças + Suporte">
 					<nav>
 						<a href= "https://bit.ly/2Wb1BKq" target= "_blank" class="fonte_2">Conjunto de Utensílios para Cozinha 11 Peças</a>
 					</nav>
 				</td>
 			</tr>
 		</table>
-	</body>
-</html>
+{% endblock %}

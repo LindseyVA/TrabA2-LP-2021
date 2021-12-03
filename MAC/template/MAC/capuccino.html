@@ -1,53 +1,57 @@
-<!DOCTYPE html>
-<html lang= "pt-br">
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="css/styles.css">
-		<link rel="shortcut icon" href="img/icon.jpeg"/>
-		<title>MAC - Receita Capuccino Nutren Senior</title>
-	</head>
-	<img src="img/logo_do_site.jpeg" alt="Logo do Site 'Me Ajuda, Chef'">
+{% extends 'MAC/template.html' %}
+{% load static %}
+
+{% block  header %}
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="{% static 'img/icon.jpeg' %}"/>
+	<title>MAC - Receita Capuccino Nutren Senior</title>
+{% endblock %}
+
+{% block styles %}
+    <link rel='stylesheet' href="{% static 'css/styles.css' %}">
+{% endblock %}
+
+{% block image %}
+	<img src="{% static 'img/logo_do_site.jpeg' %}" alt="Logo do Site 'Me Ajuda, Chef'">
+{% endblock %}
+
+{% block content %}
+	<div class="topnav">
+		<a href="{% url 'home' %}">Home</a>
+		<a href="{% url 'search' %}">Pesquisar</a>
+		<a href="{% url 'receitas' %}">Receitas</a>
+		<a href="{% url 'produtos' %}">Produtos</a>
+		<a href="{% url 'minhas-receitas' %}">Minhas Receitas</a>
+	</div> 
+	<header>
+		<h1>Capuccino Nutren Senior</h1>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+		
+		
+		
+		<div class="row">
+		  <div class="col-*-*">
+			<img class="image" src="{% static 'img/cappuccino.jpeg' %}" alt="Cappuccino Nutren Senior, Bebida com canela em pau, anis-estrelado, gengibre, NESCAFÉ Original e NUTREN Senior pó ">
+		  </div>
+		  <div class="col-*-*">
+			<h2>Ingredientes:</h2>
+				<ul class="fonte_2">					<li>1 canela em pau;</li>
+				<li>1 anis-estrelado</li>
+				<li>1 fatia de gengibre</li>
+				<li>1 xícara (chá) de água</li>
+				<li>1 colher (chá) de NESCAFÉ® Original</li>
+				<li>6 colheres (sopa) rasas de NUTREN® Senior Pó (55 g)</li>
+			</ul>
+		  </div>
+		</div>		
 	
-	<body>
-		<div class="topnav">
-		  <a href="home.html">Home</a>
-		  <a href="search.html">Pesquisar</a>
-		  <a href="receitas.htm">Receitas</a>
-		  <a href="produtos.html">Produtos</a>
-		  <a href="minhas-receitas.html">Minhas Receitas</a>
-		</div> 
-		<header>
-			<h1>Capuccino Nutren Senior</h1>
-			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-			
-			
-			
-			<div class="row">
-			  <div class="col-*-*">
-				<img class="image" src="img/cappuccino.jpeg" alt="Cappuccino Nutren Senior, Bebida com canela em pau, anis-estrelado, gengibre, NESCAFÉ Original e NUTREN Senior pó ">
-			  </div>
-			  <div class="col-*-*">
-				<h2>Ingredientes:</h2>
-				<ul class="fonte_2">
-					<li>1 canela em pau;</li>
-					<li>1 anis-estrelado</li>
-					<li>1 fatia de gengibre</li>
-					<li>1 xícara (chá) de água</li>
-					<li>1 colher (chá) de NESCAFÉ® Original</li>
-					<li>6 colheres (sopa) rasas de NUTREN® Senior Pó (55 g)</li>
-				</ul>
-			  </div>
-			</div>
-			
+		<h2>Modo de Preparo:</h2>
+		<p class="fonte_2">
+			Em uma leiteira pequena, coloque a canela, o anis-estrelado, o gengibre e a água e leve ao fogo até ferver. 
+			Retire do fogo, coe e acrescente o NESCAFÉ e o NUTREN Senior, misturando bem.
+			<br>
+			Sirva a seguir.
+		</p>
 		
-			<h2>Modo de Preparo:</h2>
-			<p class="fonte_2">
-				Em uma leiteira pequena, coloque a canela, o anis-estrelado, o gengibre e a água e leve ao fogo até ferver. 
-				Retire do fogo, coe e acrescente o NESCAFÉ e o NUTREN Senior, misturando bem.
-				<br>
-				Sirva a seguir.
-			</p>
-		
-		</header>
-	</body>
-</html>
+	</header>
+{% endblock %}

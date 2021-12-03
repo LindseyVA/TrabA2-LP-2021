@@ -1,31 +1,40 @@
-<!DOCTYPE html>
-<html lang= "pt-br">
-	<head>
+{% extends 'MAC/template.html' %}
+{% load static %}
+
+{% block  header %}
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="css/styles.css">
+		<link rel="shortcut icon" href="{% static 'img/icon.jpeg' %}"/>
 		<title>MCA - Qual é o Ingrediente</title>
-	</head>
-	<body id="body1">
-		<div class="img"><img src="img/logo_do_site.jpeg" alt="Foto do Site 'Me Ajuda, Chef'"></div>
+{% endblock %}
+
+{% block styles %}
+    <link rel='stylesheet' href="{% static 'css/styles.css' %}">
+{% endblock %}
+
+{% block image %}
+	<img src="{% static 'img/logo_do_site.jpeg' %}" alt="Logo do Site 'Me Ajuda, Chef'">
+{% endblock %}
+
+{% block content %}
+	<div id='body1'>
 		<div class="topnav">
-		  <a href="home.html">Home</a>
-		  <a href="search.html">Pesquisar</a>
-		  <a href="receitas.htm">Receitas</a>
-		  <a href="produtos.html">Produtos</a>
-		  <a href="minhas-receitas.html">Minhas Receitas</a>
+		  <a href="{% url 'home' %}">Home</a>
+		  <a href="{% url 'search' %}">Pesquisar</a>
+		  <a href="{% url 'receitas' %}">Receitas</a>
+		  <a href="{% url 'produtos' %}">Produtos</a>
+		  <a href="{% url 'minhas-receitas' %}">Minhas Receitas</a>
 		</div> 
 	
-	<div>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-		<div class="input-group mb-3">
-		  <input type="text" class="form-control" placeholder="Quais ingredientes você tem?" aria-label="" aria-describedby="basic-addon2">
+		<div>
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+			<div class="input-group mb-3">
+			<input type="text" class="form-control" placeholder="Quais ingredientes você tem?" aria-label="" aria-describedby="basic-addon2">
+			</div>
+			<div class="input-group-append">
+				<button class="btn btn-primary" type="button">Pesquisar</button>
+			</div>
 		</div>
-		<div class="input-group-append">
-			<button class="btn btn-primary" type="button">Pesquisar</button>
-		</div>
-	</div>
 	
 	</div>
-	</body>
 <!-- Olá Tio Rafa, eu usei como base para o código esse vídeo: https://www.youtube.com/watch?v=37wGx9US0Sg -->
-</html>
+{% endblock %}
