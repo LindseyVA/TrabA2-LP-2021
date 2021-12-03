@@ -12,9 +12,6 @@ def index(request):
 def search(request):
   return render(request, 'MAC/search.html')
 
-def receitas(request):
-  return render(request, 'MAC/receitas.htm')
-
 def produtos(request):
   return render(request, 'MAC/produtos.html')
 
@@ -33,6 +30,8 @@ def receita(request, param):
   else:
     raise Http404()
 
+def receitas(request):
+  return render(request, 'MAC/receitas.htm')
 
 
 
