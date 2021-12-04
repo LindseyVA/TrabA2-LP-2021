@@ -17,5 +17,7 @@
 
 {% block content %}
     <h1 id='h1_3'>Parece que a página que você está tentando encontrar não existe :(</h1>
-	<h6>	Tente buscar por http://127.0.0.1:8000/Me_Ajuda_Chef/home</h6>
+	{% filter capfirst|urlize %}
+		<h6>Tente buscar por http://127.0.0.1:8000/Me_Ajuda_Chef/home</h6>
+	{% endfilter %}
 {% endblock %}
