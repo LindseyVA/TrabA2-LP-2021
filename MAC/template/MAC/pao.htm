@@ -34,7 +34,7 @@
 				<img class="image" src="{% static 'img/pao.jpeg' %}" class="float-start" alt="Pão para um Café da Manhã Delicioso">
 			  </div>
 			  <div class="col-*-*">
-				<h2>Ingredientes:</h2>
+				<h2>{{passos.0|add:':'}}</h2>
 				<ul class="fonte_2">
 					<li>Aproximadamente 800g de farinha de trigo</li>
 					<li>1 colher de sopa de sal</li>
@@ -51,7 +51,7 @@
 			</div>
 			
 		
-			<h2>Modo de Preparo:</h2>
+			<h2>{{passos.1|add:':'}}</h2>
 				<p class="fonte_2">
 					Misture a farinha, o sal, o açúcar e o fermento esfarelado. Depois disso adicione a margarina e o ovo misturando com as mãos.<br>
 					Quando já estiver bem misturado junte a água, aos poucos, sovando até formar uma massa homogênea e macia, se necessário, coloque mais farinha, faça isso por 10 minutos.<br>
@@ -61,8 +61,8 @@
 					<br>
 					Pronto, agora deixe amornar e sirva com manteiga, se desejar.
 				</p>
-		
-			<h2>Tempo de Preparo:</h2>
+				
+			<h2>{{passos.2|add:':'}}</h2>
 				<p class="fonte_2">2 horas</p>
 		</header>
 {% endblock %}

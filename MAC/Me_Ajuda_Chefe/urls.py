@@ -1,4 +1,5 @@
 from django.urls import path
+from django.views.static import serve
 from Me_Ajuda_Chefe import views
 
 urlpatterns = [

@@ -32,8 +32,7 @@
 				<img class="image" src="{% static 'img/fricasse_vegetariano.jpeg' %}" alt="Fricassê Vegetariano">
 			</div>
 			<div class="col-*-*">
-				<h1>Receita do Pão</h1>
-				<h2>Ingredientes:</h2>
+				<h2>{{passos.0|add:':'}}</h2>
 				<ul class="fonte_2">
 					<li>400 gramas de Veg Frango desfiado Sadia Vegetal;</li>
 					<li>Azeite a gosto</li>
@@ -52,7 +51,7 @@
 		    </div>
 		</div>			
 		
-		<h2>Modo de Preparo:</h2>
+		<h2>{{passos.1|add:':'}}</h2>
 		<p class="fonte_2">
 			Numa frigideira, coloque o azeite, o Veg Frango desfiado Sadia VegeTal e aqueça por 2 a 3 minutos.
 			Cozinhe em água fervente os inhames descascados até ficares macios, descarte a água e reserve-os.

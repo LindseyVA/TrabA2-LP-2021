@@ -32,7 +32,7 @@
 			  <div class="col-*-*">
 				<img class="image" src="{% static 'img/lasanha.jpeg' %}" class="float-start" alt="Receitas de Lasanha de Carne Moída">
 			  </div>
-				<h2>Ingredientes:</h2>
+				<h2>{{passos.0|add:':'}}</h2>
 			  <div class="col-*-*">
 				<ul class="fonte_2">
 					<li>500g de massa de lasanha</li>
@@ -47,12 +47,12 @@
 					<li>3 colheres de óleo</li>
 					<li>1 caixa de molho de tomate</li>
 					<li>3 dentes de alho amasasados</li>
-					<li>1 pacote de queijo ralado</li>>
+					<li>1 pacote de queijo ralado</li>
 				</ul>
 			  </div>
 			</div>
 			
-			<h2>Modo de Preparo:</h2>
+			<h2>{{passos.1|add:':'}}</h2>
 				<p class="fonte_2">
 					Primeiro faremos a massa, cozinhe-a segundo as orientações do fabricante, despeje em um refratário com água gelada para não grudar e reserve.<br>
 					Depois de ter botado a massa para descansar faremos o molho à bolonhesa: Para faze-lo refogue o alho, a cebola, a carne moida, o molho de tomate e deixe cozinhar por 3 minutos, depois disso reserve<br>
@@ -65,7 +65,7 @@
 					
 				</p>
 		
-			<h2>Tempo de Preparo:</h2>
+			<h2>{{passos.2|add:':'}}</h2>
 				<p class="fonte_2">1 hora</p>
 		</header>
 {% endblock %}
