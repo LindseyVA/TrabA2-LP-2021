@@ -31,9 +31,13 @@ def receita(request, param):
     raise Http404()
 
 def receitas(request):
-  return render(request, 'MAC/receitas.htm')
-
-
-
-
-
+  lista = ['"Cozinhar é o momento em que todos os ingredientes se encontram e juntos formam uma ópera de aromas e sabores"',
+           '"Cozinhar é colocar amor para ser degustado"',
+            '"Cozinhar e a arte de traduzir em sabor o mais nobre sentimento"',
+            '"Cozinhar é terapia para alma e alimento para o corpo"']
+  lista_receitas = ['Receita desse delicioso pão', 'Receita desse delicioso Fricassê Vegetariano', 'Lasanha de Carne Moída', 'Cappuccino Nutren Senior']
+  context = {
+    'message': lista,
+    'receita': lista_receitas,
+  }
+  return render(request, 'MAC/receitas.htm', context)
