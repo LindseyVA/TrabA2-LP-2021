@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Me_Ajuda_Chefe'
+    'Me_Ajuda_Chefe',
+    'gustavoapp'
 ]
 
 MIDDLEWARE = [
