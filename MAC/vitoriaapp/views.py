@@ -7,7 +7,7 @@ from django.shortcuts import render
 from django.urls import reverse
 
 def index(request):
-    return HttpResponse('<strong>Teste do Matheus na A2</strong>')
+    return HttpResponse('<strong>Teste da Vitoria na A2</strong>')
 
 def view_dinamica_int(request, param):
     print(param)
@@ -27,5 +27,5 @@ def view_dinamica_str(request, param):
     else:
         raise Http404()
 
-def matheus(request):
-    return render(request, 'mathapp/analise_matheus.html')
+def vitoria(request):
+    return render(request, 'vitoriaapp/analise_vitoria.html')

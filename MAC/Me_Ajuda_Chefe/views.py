@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.urls import reverse
 from django.http import HttpResponse, HttpResponseRedirect, Http404
 
+
 def home(request):
   lista = ['"Cozinhar é o momento em que todos os ingredientes se encontram e juntos formam uma ópera de aromas e sabores"',
            '"Cozinhar é colocar amor para ser degustado"',

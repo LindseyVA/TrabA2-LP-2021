@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="author", content="Vitória S Vianna">
+  <title>Análise</title>
+  <link rel='stylesheet' href="stylevi.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+</head>
+
+
+<body>
+<div class='page-wrapper'>
+
+
+  <section class='intro'>
+    <header>
+      <h1>Análise de pergunta de negócio</h1>
+      <h2>Este trabalho tem como objetivo realizar uma análise que consta de uma pergunta de negócio usando o Pandas. </h2>
+    </header>
+    <div id="introduction">
+      <p>Trabalho para a A2 da disciplina de Linguagens de programação - EMAp FGV</p>
+      <p>por Vitória dos Santos Vianna</p>
+    </div>
+  </section>
+
+
+
+  <section class="intro2">
+    <h2>Introdução</h2>
+      <p>Para este trabalho tinhamos que usar o banco de dados que nós mesmo criamos para a ánalise. Vendo que temos informações sobre data de nascimento e o número de itens comprados por cliente eu pensei em trabalhar com base na seguinte pergunta:</p>
+    <h3>A idade de um índividuo influencia na quantidade de itens comprados no nosso site?</h3>
+      <p>Com esta pergunta em mente, pensei que através da análise fosse possível descobrir se existe uma certa faixa etária que gasta mais em nosso site. Assim, seria beneficiário tornar esta faixa etária nosso publico alvo, já que nos traz mais lucros. </p>
+  </section>
+
+
+  <section class="data">
+    <h2>Um pouco mais sobre nossos dados</h2>
+    <p>Para a nossa análise, estaremos fazendo uso da tabela de usuários dos nossos dados.</p>
+    <p>Esta tabela contém dados sobre os usuários incluindo, id, nome, email, senha, estado, estado civil, telefone, data de nascimento e itens comprados.</p>
+    <p>Para fazer a análise proposta, só será necessário as colunas de data de nascimento e itens comprados, mas ao longo da análise vamos criar outras colunas para facilitar nosso trabalho.</p>
+  </section>
+
+  <section class="um">
+    <p>df_usu["Data_de_Nascimento"] = pd.to_datetime(df_usu["Data_de_Nascimento"])</p>
+    <p>df_usu["idade"] = df_usu["Data_de_Nascimento"].apply(lambda x : (pd.datetime.now().year - x.year))</p>
+  </section>
+
+  <section class="umdois">
+    <p>Ao rodar o código acima criamos uma nova coluna chamada idade a partir da data de nascimento.</p>
+    <p>A partir da coluna idade vai ser mais fácil classificar as pessoas em faixa etária. Vamos dividir em 5 grupos: Criança, Adolescente, jovem adulto, adulto e idoso.</p>
+    <p>Agora nos resta fazer essa classificação nos dados. Vamos rodar o código a seguir:</p>
+  </section>
+
+
+  <section class="dois">
+    <p>bins = [0,12,18,45,60,110]</p>
+    <p>labels = ["Criança","Adolescente","Jovem adulto","Adulto","Idoso"]</p>
+    <p>df_usu['Grupo_de_idade'] = pd.cut(df_usu['idade'], bins=bins, labels=labels, right=False)</p>
+  </section>
+
+
+  <section class="tres">
+      <p>Agora todos os individuos dos nossos dados foram classificados em um grupo de faixa etária. Adicionamos isso na nova coluna chamada Grupos_de_idade.</p>
+      <p>Após esta limpeza e organização dos dados podemos agora partir para a parte da análise.</p>
+  </section>
+
+
+  <section class="quatro">
+    <h3>ANÁLISE DOS DADOS</h3>
+  </section>
+
+  <section class="cinco">
+    <p>rodando o código:</p>
+  </section>
+
+  <section class="seis">
+    <p>df_usu.groupby(['Grupo_de_idade']).Grupo_de_idade.count()</p>
+  </section>
+
+  <section class="sete">
+    <p>temos os seguintes resultados</p>
+  </section>
+
+  <section class="oito">
+    <p>criança: 23</p>
+    <p>adolescente: 12</p>
+    <p>Jovem adulto: 52</p>
+    <p>Adulto: 32</p>
+    <p>Idoso: 73</p>
+  </section>
+
+  <section class="nove">
+    <p>Esses números nos dizem quantos individuos tem por grupo de idade</p>
+    <p>Vamos agora ver quantos itens no total foram comprados por cada grupo</p>
+  </section>
+
+  <section class="dez">
+    <p>criança: 246</p>
+    <p>adolescente: 102</p>
+    <p>Jovem adulto: 519</p>
+    <p>Adulto: 289</p>
+    <p>Idoso: 682</p>
+  </section>
+
+  <section class="onze">
+    <p>Quando traçamos os gráficos dos dois resultados fica evidente que são similares</p>
+  </section>
+
+  <section class="graf">
+    <img src="graf1.jpg" alt="primeiro gráfico" style="height:300px;width:340px;"/>
+    <img src="graf2.jpg" alt="segundo gráfico" style="height:300px;width:340px;"/>
+  </section>
+
+  <section class="doze">
+    <p>Para ter mais precisão nos resultados vamos calcular em média quanto um individuo de cada categoria compra de itens.</p>
+  </section>
+
+  <section class="treze">
+    <p>criança: 10.6952652173913043</p>
+    <p>adolescente: 8.5</p>
+    <p>Jovem adulto: 9.98076923076923</p>
+    <p>Adulto: 9.03125</p>
+    <p>Idoso: 9.342465753424657</p>
+  </section>
+
+  <section class="onefour">
+    <p>Podemos ver então que as crianças são as que mais compram itens em nosso site, apesar de ser pouco diferença comparado aos outros</p>
+    <p>Logo, se fosse para escolhermos um publico alvo para nossa plataforma, o ideal seria focar nas crianças.</p>
+  </section>
+
+  <section class="onefive">
+    <p>É importante destacar que nossos dados foram feitos a partir de um fake data generator, então os resultados estão corretos mas não representam a realidade ja que nossa plataforma não tem clientes.</p>
+    <p>Entretanto, acho que a análise foi válida ja que o método serviu para descobrir qual deveria ser o nosso publico alvo, e acredito que se os dados não fossem fake, a resposta seria mais evidente, e não tão bem distribuida como no nosso caso.</p>
+  </section>
+
+  <section class="onesix">
+    <h1>OBRIGADO</h1>
+  </section>
+
+  <aside>
+    <div id="summary"></div>
+    <div id="groups"></div>
+    <div id="albums"></div>
+  </aside>
+
+</div>
+</body>
+</html>
