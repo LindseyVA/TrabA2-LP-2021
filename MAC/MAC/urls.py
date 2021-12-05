@@ -23,6 +23,7 @@ from django.views.static import serve
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('Me_Ajuda_Chef/', include('Me_Ajuda_Chefe.urls')),
+    path('matheus/', include('mathapp.urls')),
     url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
     path('gustavo/', include('gustavoapp.urls')),
     path('lindsey/', include('lindseyapp.urls')),

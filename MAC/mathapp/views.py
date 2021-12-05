@@ -7,9 +7,11 @@ from django.shortcuts import render
 from django.urls import reverse
 
 def index(request):
-    return HttpResponse('<strong>Teste do Gustavo na A2</strong>')
+    return HttpResponse('<strong>Teste do Matheus na A2</strong>')
 
 def view_dinamica_int(request, param):
+    print(param)
+    print(type(param))
     if param == 0:
         return HttpResponse('<strong>Paraâmetro 0</strong>')
     elif param == 1:
@@ -18,7 +20,6 @@ def view_dinamica_int(request, param):
         return HttpResponse('<strong>Paraâmetro 2</strong>')
     else:
         raise Http404()
-       
 
 def view_dinamica_str(request, param):
     if param == 'leao':
@@ -26,5 +27,5 @@ def view_dinamica_str(request, param):
     else:
         raise Http404()
 
-def gustavo(request):
-    return render(request, 'gustavoapp/analise_gustavo.html')
+def matheus(request):
+    return render(request, 'mathapp/analise_matheus.html')
