@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'gustavoapp',
     'vitoriaapp',
     'lindseyapp',
+    'rianapp'
 ]
 
 MIDDLEWARE = [
