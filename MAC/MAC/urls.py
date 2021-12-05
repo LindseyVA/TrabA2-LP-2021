@@ -27,4 +27,5 @@ urlpatterns = [
     url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
     path('gustavo/', include('gustavoapp.urls')),
     path('lindsey/', include('lindseyapp.urls')),
+    path('vitoria/', include('vitoriaapp.urls')),
 ]
