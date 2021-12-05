@@ -1,0 +1,173 @@
+body {
+    font-family: Georgia, serif;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+    }
+
+h1{
+  font-size: 40px;
+}
+
+h2{
+  font-size: 20px;
+}
+
+h1, h3 {
+    color: rgba(0,0,0,1);
+    }
+
+header[role=banner] {
+    font-size: 30px;
+    }
+
+/* LAYOUT */
+
+body {
+    text-align: right;
+    max-width: 700px;
+    margin-left: 40px;
+}
+
+.page-wrapper {
+    position: relative;
+    max-width: 700px;
+    padding: 30px 0 0;
+    margin: 0 10px 10px auto;
+    text-align: left;
+    -webkit-box-shadow: 0 0 24px rgba(0,0,0,0.3);
+       -moz-box-shadow: 0 0 24px rgba(0,0,0,0.3);
+            box-shadow: 0 0 24px rgba(0,0,0,0.3);
+}
+
+.page-wrapper {
+    margin-left: 80px;
+}
+
+body, .page-wrapper:before, .page-wrapper:after {
+    background: #fff url('food4.jpg') no-repeat fixed 50% top;
+}
+
+.page-wrapper:before {
+    content: ' ';
+    position: fixed;
+    display: block;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.intro {
+    padding: 96px 0 36px;
+    position: relative;
+    text-align: center;
+    margin: -30px 0 0;
+    background: rgba(17,210,230,0.7);
+    border-color: rgba(250,223,154,0.3);
+    border-style: solid;
+    -webkit-transition: all .2s ease;
+       -moz-transition: all .2s ease;
+        -ms-transition: all .2s ease;
+         -o-transition: all .2s ease;
+            transition: all .2s ease;
+}
+
+.intro2{
+  padding: 20px;
+  padding-bottom: 40px;
+}
+
+.data, .onefive{
+    padding: 0px 10px 10px;
+    position: relative;
+    margin: -30px 0 0;
+    background: rgba(17,210,230,0.7);
+    border-color: rgba(250,223,154,0.3);
+    border-style: solid;
+    -webkit-transition: all .2s ease;
+       -moz-transition: all .2s ease;
+        -ms-transition: all .2s ease;
+         -o-transition: all .2s ease;
+            transition: all .2s ease;
+}
+
+.um{
+  padding: 0px 10px 10px;
+  position: relative;
+  margin: 10px 10px 0px;
+  background: #fff;
+  border-color: #fff;
+  border-style: solid;
+  -webkit-transition: all .2s ease;
+     -moz-transition: all .2s ease;
+      -ms-transition: all .2s ease;
+       -o-transition: all .2s ease;
+          transition: all .2s ease;
+}
+
+.umdois{
+  padding: 20px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+.dois,.seis,.oito,.dez,.treze{
+  padding: 0px 10px 10px;
+  position: relative;
+  margin: 10px 10px 0px;
+  background: #fff;
+  border-color: #fff;
+  border-style: solid;
+  -webkit-transition: all .2s ease;
+     -moz-transition: all .2s ease;
+      -ms-transition: all .2s ease;
+       -o-transition: all .2s ease;
+          transition: all .2s ease;
+}
+
+.tres{
+  padding: 20px;
+  padding-bottom: 40px
+}
+
+.quatro,.graf{
+  padding: 0px 0 10px;
+  position: relative;
+  text-align: center;
+  margin: -30px 0 0;
+  background: rgba(17,210,230,0.7);
+  border-color: rgba(250,223,154,0.3);
+  border-style: solid;
+  -webkit-transition: all .2s ease;
+     -moz-transition: all .2s ease;
+      -ms-transition: all .2s ease;
+       -o-transition: all .2s ease;
+          transition: all .2s ease;
+}
+
+.cinco,.sete,.nove,.doze{
+  padding: 20px;
+  padding-bottom: 5px;
+}
+
+.onze,.onefour{
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+.onesix{
+  padding: 0px 0 20px;
+  position: relative;
+  text-align: center;
+  margin: 50px 0 0;
+  background: rgba(17,210,230,0.7);
+  border-color: rgba(250,223,154,0.3);
+  border-style: solid;
+  -webkit-transition: all .2s ease;
+     -moz-transition: all .2s ease;
+      -ms-transition: all .2s ease;
+       -o-transition: all .2s ease;
+          transition: all .2s ease;
+}
