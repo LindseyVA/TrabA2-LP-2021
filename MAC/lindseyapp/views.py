@@ -12,7 +12,7 @@ def index(request):
     return HttpResponse('<strong>Uma das análises</strong>')
 
 def view_dinamica_str(request, param):
-    if param == 'lindsey' or param == 'analise':
+    if param == 'analise':
         return render(request, 'lindseyapp/analise_lindsey.html')
     else:
         raise Http404()
